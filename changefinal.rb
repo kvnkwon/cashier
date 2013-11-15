@@ -10,7 +10,7 @@ end
 
 puts "How much was given?"
 given = gets.chomp
-if given.to_f <= 0 || amount_due =~ /[a-zA-Z]/
+if given.to_f <= 0 || given =~ /[a-zA-Z]/
   puts "Invalid input. Please try again."
   abort
 end
